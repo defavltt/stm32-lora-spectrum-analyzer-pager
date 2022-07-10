@@ -126,7 +126,14 @@
    - MCP1700 / MCP1703 3.3v regulator
    - AP2301 P channel MOSFETs used to drive vibrator and buzzer
 
-Double sided board (bottom side freehand drawn with a permanent marker) with some wire jumpers required. Pads for keyboard, screen and optional serial are left. Parts from MT3608 are used for the backlight 8.2v power (only if the same screen is used - Tri-T D22-5003 B01 / driver - ks0713).
+Double sided board (bottom side freehand drawn with a permanent marker) with some wire jumpers required. Pads for keyboard, screen and optional serial are left. Parts from MT3608 are used for the backlight 8.2v power (only if the same screen is used - Tri-T D22-5003 B01 / driver - ks0713). Using a connector for plugging in an external antenna or a PA is encouraged.
+
+This project uses:  
+[Arduino Core STM32](https://github.com/stm32duino/Arduino_Core_STM32)  
+[STM32 Low Power](https://github.com/stm32duino/STM32LowPower)  
+[u8g2](https://github.com/olikraus/u8g2)  
+a modified version of [RadioHead](https://www.airspayce.com/mikem/arduino/RadioHead)  
+a modified version of [MCP7940](https://github.com/Zanduino/MCP7940)  
 
 ![](images/DSC_1574.JPG)
 *MCX connector*
