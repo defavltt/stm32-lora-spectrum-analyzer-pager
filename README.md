@@ -39,11 +39,11 @@
  - Backlight mode - timeout / no timeout (will not go to sleep) / on startup (turn backlight on when starting up)
  - Adjust contrast
 
-### *RFM95 settings*
+### *RF settings*
 <img src="images/menus/rfsett1.jpg" width="300"> <img src="images/menus/rfsett2.jpg" width="300">
 
  - Setting frequency
-   - Select a digit to change by entering in option and moving the digit cursor left / right
+   - Select a digit to change by entering in the option and moving the digit cursor left / right
  - Continuous TX - doesnt transmit actual data, used for testing other devices
 
 ### *Feedback*
@@ -73,3 +73,29 @@
    - Up / down adjusts frequency by 1
    - Left / right adjusts frequency by 5
  - Showing parameters and/or marker is done by pressing multi key
+
+### *Registers debug*
+<img src="images/menus/regdbg.jpg" width="300">
+
+ - Top left number showing address of the first register of the group
+ - Top right is showing current selected register in binary format
+ - Values at left are registers in HEX format
+ - Values at right are the addresses corresponding to the registers
+ - Navigating the 8 register group is done by pressing up / down
+ - Navigating outside of the group is done by pressing left / right
+
+### *Save settings*
+<img src="images/menus/main3.jpg" width="300">
+
+ - Saves settings into flash (don't overdo it to prevent flash memory wear)
+
+### *Time and date*
+<img src="images/menus/settime.jpg" width="300">
+
+ - Setting time
+   - Select hour / minute by entering in the option, moving the digit cursor left / right and changing it by pressing up / down
+ - Setting date
+   - Select day / month / year by entering in the option, moving the digit cursor left / right and changing it by pressing up / down
+ - Confirm by pressing enter on set time / date
+
+ - *Requires an i2c clock board(MCP7940)* <img src="images/mcp7940-module.jpg" height="80"> 
