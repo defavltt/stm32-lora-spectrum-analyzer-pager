@@ -3,6 +3,8 @@
 <!-- <img src="images/DSC_1560.JPG" width="800"> -->
 ![](images/DSC_1560.JPG)
 
+![](images/iso-numbers-blue.png)
+
 ## Features
 
  - Sending and receiving messages through LoRa
@@ -20,6 +22,20 @@
  - Vibration
  
  - Sleep modes
+ 
+## Operation
+
+ - Main menu is opened by pressing any button except multi key and escape
+
+ - Stored messages can be seen by pressing multi key
+
+ - Pressing and holding up / down automatically repeats the button
+
+ - Waking up is done by pressing escape
+
+ - Backlight is turned on / off by pressing and holding enter
+
+
  
 ## Menu description
 
@@ -99,3 +115,24 @@
  - Confirm by pressing enter on set time / date
 
  - *Requires an i2c clock board(MCP7940)* <img src="images/mcp7940-module.jpg" height="80"> 
+
+## Hardware
+
+ - Parts
+   - RFM95/SX1276 board
+   - Tri-T D22-5003 B01 lcd screen (ks0713 driver)
+   - STM32F103C8
+   - 8Mhz crystal resonator
+   - MCP1700 / MCP1703 3.3v regulator
+   - AP2301 P channel MOSFETs used to drive vibrator and buzzer
+
+Double sided board (bottom side freehand drawn with a permanent marker) with some wire jumpers required. Pads for keyboard, screen and optional serial are left. Parts from MT3608 are used for the backlight 8.2v power (only if the same screen is used - Tri-T D22-5003 B01 / driver - ks0713).
+
+![](images/DSC_1574.JPG)
+*MCX connector*
+
+![](images/DSC_1166.JPG)
+
+![](images/20211121_111555.JPG)
+
+![](images/board.png)
